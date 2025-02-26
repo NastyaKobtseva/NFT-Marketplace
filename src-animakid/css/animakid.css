@@ -195,7 +195,7 @@ a {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-purple-bg {
-    background-image: url("/src-animakid/image/raster/bg-color2x.png");
+    background-image: url("../image/raster/bg-color2x.png");
   }
 }
 .section-animakid {
@@ -391,13 +391,13 @@ a {
 
 @media (max-width: 1074px) {
   .section-purple-bg {
-    background-image: url("/src-animakid/image/raster/bg-color-tablet.png");
+    background-image: url("../image/raster/bg-color-tablet.png");
     height: 280px;
   }
 }
 @media (max-width: 1074px) and (min-device-pixel-ratio: 2), (max-width: 1074px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1074px) and (min-resolution: 192dpi), (max-width: 1074px) and (min-resolution: 2dppx) {
   .section-purple-bg {
-    background-image: url("/src-animakid/image/raster/bg-color-tablet2x.png");
+    background-image: url("../image/raster/bg-color-tablet2x.png");
   }
 }
 @media (max-width: 1074px) {
@@ -460,13 +460,13 @@ a {
     padding: 0 0 0 0;
   }
   .section-purple-bg {
-    background-image: url("/src-animakid/image/raster/bg-color-mobile.png");
+    background-image: url("../image/raster/bg-color-mobile.png");
     height: 250px;
   }
 }
 @media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
   .section-purple-bg {
-    background-image: url("/src-animakid/image/raster/bg-color-mobile2x.png");
+    background-image: url("../image/raster/bg-color-mobile2x.png");
   }
 }
 @media (max-width: 768px) {

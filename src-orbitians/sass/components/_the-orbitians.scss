@@ -1,5 +1,5 @@
 .bg-before-orbitians {
-    background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg.png");
+    background-image: url("../image/raster/the-orbitians/orbitians-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,13 +8,11 @@
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .bg-before-orbitians {
-        background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg2x.png");
+        background-image: url("../image/raster/the-orbitians/orbitians-bg2x.png");
     }
 }
 .the-orbitians {
     padding: 40px 0 40px 0;
-}
-.the-orbitians__content {
 }
 .orbitians {
     display: flex;
@@ -315,13 +313,13 @@
 
 @media (max-width: 1074px) {
     .bg-before-orbitians {
-        background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg-tablet.png");
+        background-image: url("../image/raster/the-orbitians/orbitians-bg-tablet.png");
         height: 420px;
     }
     @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .bg-before-orbitians {
-            background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg-tablet2x.png");
+            background-image: url("../image/raster/the-orbitians/orbitians-bg-tablet2x.png");
         }
     }
     .minted__title {
@@ -349,13 +347,13 @@
 
 @media (max-width: 768px) {
     .bg-before-orbitians {
-        background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg-mobile.png");
+        background-image: url("../image/raster/the-orbitians/orbitians-bg-mobile.png");
         height: 420px;
     }
     @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
     (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .bg-before-orbitians {
-            background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg-mobile2x.png");
+            background-image: url("../image/raster/the-orbitians/orbitians-bg-mobile2x.png");
         }
     }
     .desktop-version {
