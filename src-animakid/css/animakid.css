@@ -186,7 +186,7 @@ a {
 }
 .section-purple-bg {
   padding: 80px 0 0 0;
-  background-image: url("/src-animakid/image/raster/bg-color.png");
+  background-image: url("../image/raster/bg-color.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
