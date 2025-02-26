@@ -1341,7 +1341,7 @@ a {
   }
 }
 .magic {
-  background-image: url("../../image/raster/magic/magic-bg-desktop.png");
+  background-image: url("../image/raster/magic/magic-bg-desktop.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1356,7 +1356,7 @@ a {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .magic {
-    background-image: url("../../image/raster/magic/magic-bg-desktop2x.png");
+    background-image: url("../image/raster/magic/magic-bg-desktop2x.png");
   }
 }
 @media (max-width: 1074px) {
