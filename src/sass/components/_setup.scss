@@ -1,0 +1,174 @@
+.works {
+    padding: 80px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+}
+.find {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    &__title {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+    &__paragraf {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+}
+.setup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    &__content {
+        display: flex;
+        width: 330px;
+        padding: 10px 30px 30px 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        background-color: #3B3B3B;
+        height: 439px;
+        transition: transform .3s linear;
+        &:hover {
+            transform: scale(0.98) translateY(-5px);
+        }
+        &-image {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+.earning {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    &__title {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+    }
+    &__text {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        &-desktop {
+            color: #FFF;
+            font-family: "Work Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+        }
+        &-tablet {
+            display: none;
+            color: #FFF;
+            font-family: "Work Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+        }
+    }
+}
+
+@media (max-width: 1074px) {
+    .works {
+        padding: 40px 0;
+        &__content {
+            gap: 40px;
+        }
+    }
+    .find {
+        &__title {
+            font-size: 28px;
+            line-height: 140%;
+        }
+        &__paragraf {
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+    .setup {
+        &__content {
+            width: 210px;
+            padding: 10px 20px 30px 20px;
+            height: 320px;
+            &-image {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+    .earning {
+        &__title {
+            font-size: 16px;
+        }
+        &__text {
+            font-size: 12px;
+            width: 170px;
+            &-desktop {
+                display: none;
+            }
+            &-tablet {
+                display: block;
+                font-size: 12px;
+                width: 170px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .setup {
+        flex-wrap: wrap;
+        gap: 20px;
+        &__content {
+            flex-direction: row;
+            width: 315px;
+            padding: 20px;
+            height: 157px;
+            &-image {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .earning {
+        text-align: start;
+        align-items: start;
+        &__text {
+            width: 155px;
+            &-tablet {
+                width: 155px;
+            }
+        }
+    }
+}

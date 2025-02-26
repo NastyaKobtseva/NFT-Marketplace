@@ -1,0 +1,255 @@
+.account {
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    &__content-img {
+        width: 610px;
+        height: 691px;
+        &-tablet {
+            display: none;
+        }
+        &-mobile {
+            display: none;
+        }
+    }
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 51px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        text-transform: capitalize;
+    }
+    &__paragraf {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        text-transform: capitalize;
+        width: 460px;
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &-name {
+            outline: none;
+            border-radius: 20px;
+            border: 1px solid #858584;
+            background: #FFF;
+            padding: 16px 20px 16px 40px;
+            width: 330px;
+            height: 46px;
+            background-repeat: no-repeat;
+            background-image: url('/src-create-account/images/raster/account/user.svg');
+            background-size: 18px 18px;
+            background-position: 5% 50%;
+            transition: border .3s linear, bg-iamge .3s linear, outline .3s linear, transform .3s linear;
+            &::placeholder {
+                color: #2B2B2B;
+                font-family: "Work Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+            }
+            &:focus, &:focus-visible {
+                transform: scale(0.98);
+                border: none;
+                outline: 2px solid #A259FF;
+                background-image: url('/src-create-account/images/raster/account/user-focus.svg');
+            }
+        }
+        &-email {
+            outline: none;
+            border-radius: 20px;
+            border: 1px solid #858584;
+            background: #FFF;
+            padding: 16px 20px 16px 40px;
+            width: 330px;
+            height: 46px;
+            background-repeat: no-repeat;
+            background-image: url('/src-create-account/images/raster/account/email.svg');
+            background-size: 18px 18px;
+            background-position: 5% 50%;
+            transition: border .3s linear, bg-iamge .3s linear, outline .3s linear, transform .3s linear;
+            &::placeholder {
+                color: #2B2B2B;
+                font-family: "Work Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+            }
+            &:focus, &:focus-visible {
+                transform: scale(0.98);
+                border: none;
+                outline: 2px solid #A259FF;
+                background-image: url('/src-create-account/images/raster/account/email-focus.svg');
+            }
+        }
+        &-password {
+            outline: none;
+            border-radius: 20px;
+            border: 1px solid #858584;
+            background: #FFF;
+            padding: 16px 20px 16px 40px;
+            width: 330px;
+            height: 46px;
+            background-repeat: no-repeat;
+            background-image: url('/src-create-account/images/raster/account/passwod.svg');
+            background-size: 18px 18px;
+            background-position: 5% 50%;
+            transition: border .3s linear, bg-iamge .3s linear, outline .3s linear, transform .3s linear;
+            &::placeholder {
+                color: #2B2B2B;
+                font-family: "Work Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+            }
+            &:focus, &:focus-visible {
+                transform: scale(0.98);
+                border: none;
+                outline: 2px solid #A259FF;
+                background-image: url('/src-create-account/images/raster/account/passwod-focus.svg');
+            }
+        }
+    }
+    &__btn {
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        border-radius: 20px;
+        background: #A259FF;
+        border: none;
+        width: 330px;
+        height: 46px;
+        transition: transform 0.3s linear, bg-color .3s linear, border .3s linear;
+        &:hover {
+            transform: scale(0.98);
+            border: 2px solid #A259FF;
+            background-color: transparent;
+        }
+    }
+}
+
+@media (max-width: 1074px) {
+    .account__content {
+        gap: 40px;
+    }
+    .account__content-img {
+        display: none;
+        &-tablet {
+            display: block;
+            width: 397px;
+            height: 615px;
+        }
+    }
+    .welcome__title {
+        font-size: 38px;
+    }
+    .welcome__paragraf {
+        font-size: 16px;
+        width: 325px;
+    }
+    .form__content-name {
+        width: 325px;
+    }
+    .form__content-email {
+        width: 325px;
+    }
+    .form__content-password{
+        width: 325px;
+    }
+    .form__btn {
+        width: 325px;
+    }
+}
+
+@media (max-width: 768px) {
+    .account__content {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .welcome {
+        padding: 0 0 40px 0;
+        gap: 30px;
+    }
+    .account__content-img {
+        &-tablet {
+            display: none;
+        }
+        &-mobile {
+            display: block;
+            width: 100%;
+            // width: 375px;
+            height: auto;
+        }
+    }
+    .welcome__paragraf {
+        width: 315px;
+    }
+    .form__content-name {
+        width: 315px;
+    }
+    .form__content-email {
+        width: 315px;
+    }
+    .form__content-password{
+        width: 315px;
+    }
+    .form__btn {
+        width: 315px;
+    }
+}
+
+@media (max-width: 375px) {
+    .welcome__title {
+        font-size: 30px;
+    }
+    .welcome__paragraf {
+        width: 300px;
+    }
+    .form__content-name {
+        width: 300px;
+    }
+    .form__content-email {
+        width: 300px;
+    }
+    .form__content-password{
+        width: 300px;
+    }
+    .form__btn {
+        width: 300px;
+    }
+}

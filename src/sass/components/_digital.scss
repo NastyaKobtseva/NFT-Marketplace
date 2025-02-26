@@ -1,0 +1,271 @@
+.digital {
+    padding: 80px 0;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 65px;
+    }
+}
+.discover {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    &__title {
+        width: 510px;
+        color:#FFF;
+        font-family: "Work Sans";
+        font-size: 67px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        text-transform: capitalize;
+    }
+    &__paragraf {
+        width: 510px;
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        text-transform: capitalize;
+        padding: 20px 0 30px 0;
+    }
+    &__btn {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        height: 60px;
+        padding: 0px 50px;
+        border-radius: 20px;
+        background-color: #A259FF;
+        border: none;
+        transition: transform .3s linear, bg-color .3s linear, border .3s linear;
+        & svg {
+            fill: white;
+            transition: transform .3s linear, fill .3s linear;
+        }
+        &:hover {
+            border: 2px solid #A259FF;
+            background-color: transparent;
+            transform: scale(0.97);
+            & svg {
+                fill: #A259FF;
+                transform: rotate(360deg) scale(1.4);
+            }
+        }
+    }
+    &__info {
+        padding: 30px 0 0 0;
+        display: flex;
+        gap: 66px;
+        &-title {
+            color: #FFF;
+            font-family: "Space Mono";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%;
+            text-transform: capitalize;
+        }
+        &-text {
+            color: #FFF;
+            font-family: "Work Sans";
+            font-size: 23.99px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+            text-transform: capitalize;
+        }
+    }
+    &__mobile {
+        display: none;
+        background: #3B3B3B;
+        border-radius: 20px 20px;
+        width: 315px;
+        &-photo {
+            width: 315px;
+            height: 206px;
+        }
+    }
+}
+.walking {
+    background: #3B3B3B;
+    border-radius: 20px 20px;
+    &__image {
+        width: 510px;
+        height: 401px;
+    }
+}
+.animakid {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    &__title {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    &__paragraf {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    &__mobile {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        padding: 20px;
+        &-title {
+            color: #FFF;
+            font-family: "Work Sans";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%;
+            text-transform: capitalize;
+        }
+        &-block {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        &-paragraf {
+            color: #FFF;
+            font-family: "Work Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+        }
+    }
+}
+
+@media (max-width: 1074px) {
+    .digital {
+        &__content {
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+    }
+    .discover {
+        &__title {
+            width: 315px;
+            font-size: 38px;
+            line-height: 140%;
+        }
+        &__paragraf {
+            width: 315px;
+            font-size: 16px;
+            line-height: 140%;
+            padding: 20px 0 20px 0;
+        }
+        &__info {
+            padding: 20px 0 0 0;
+            display: flex;
+            gap: 42px;
+            &-title {
+                font-size: 22px;
+                line-height: 160%;
+            }
+            &-text {
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+    }
+    .walking {
+        background: #3B3B3B;
+        border-radius: 20px 20px;
+        &__image {
+            width: 330px;
+            height: 221px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .digital {
+        padding: 40px 0;
+        &__content {
+            gap: 40px;
+        }
+    }
+    .discover {
+        align-items: center;
+        &__title {
+            width: 330px;
+            font-size: 28px;
+            line-height: 120%;
+        }
+        &__paragraf {
+            width: 330px;
+            font-size: 16px;
+            line-height: 140%;
+            padding: 10px 0 40px 0;
+        }
+        &__info {
+            padding: 40px 0 0 0;
+            display: flex;
+            gap: 42px;
+            &-title {
+                font-size: 22px;
+                line-height: 160%;
+            }
+            &-text {
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+        &__mobile {
+            display: block;
+        }
+        &__btn {
+            width: 315px;
+            margin: 40px 0 0 0;
+        }
+    }
+    .walking {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .discover {
+        align-items: center;
+        &__title {
+            width: 305px;
+            font-size: 28px;
+            line-height: 120%;
+        }
+        &__paragraf {
+            width: 305px;
+            font-size: 16px;
+            line-height: 140%;
+            padding: 10px 0 40px 0;
+        }
+    }
+}

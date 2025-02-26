@@ -1,0 +1,231 @@
+.artists {
+    padding: 80px 0 80px 0;
+}
+.artists__content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+.artist-explore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 368px;
+}
+.artist-explore__title {
+    color:  #FFF;
+
+    /* H3 - Work Sans */
+    font-family: "Work Sans";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+}
+.artist-explore__btn {
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 267px;
+    height: 60px;
+    gap: 12px;
+    border-radius: 20px;
+    border: 2px solid #A259FF;
+    background-color: transparent;
+    transition: transform .3s linear, border .3s linear, bg-color .3s linear;
+    &:hover {
+        transform: scale(0.98) translateY(-5px);
+        border: none;
+        background-color: #A259FF;
+        & svg {
+            fill: white;
+            transform: rotate(-360deg) scale(1.05);
+        }
+    }
+    & svg {
+        fill: #A259FF;
+        transition: transform .3s linear, fill .3s linear;
+    }
+}
+.artist-collection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px 30px;
+}
+.artist-collection__content {
+    border-radius: 20px;
+    background: #3B3B3B;
+    width: 330px;
+    transition: transform .3s linear;
+    &:hover {
+        transform: scale(0.98) translateY(-5px);
+    }
+}
+.foxy {
+    order: 1;
+}
+.artist-collection__content-photo {
+    width: 330px;
+    height: 295px;
+}
+.life {
+    padding: 20px 30px 25px 30px;
+}
+.life__title {
+    color:  #FFF;
+
+    /* H5 - Work Sans */
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 30.8px */
+    text-transform: capitalize;
+}
+.life__orbitian {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0 0 0;
+}
+.life__orbititan-photo {
+    width: 24px;
+    height: 24px;
+}
+.life__orbitian-text {
+    color:  #FFF;
+
+    /* Base (Body) - Space Mono */
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+.bid {
+    padding: 25px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.bid__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.bid__text {
+    color: #858584;
+
+    /* Caption - Space Mono */
+    font-family: "Space Mono";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+}
+.bid__price {
+    color:  #FFF;
+
+    /* Base (Body) - Space Mono */
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+.highest {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.cat {
+    order: 2;
+}
+.dog {
+    order: 3;
+}
+.bear {
+    order: 4;
+}
+.dancing-robot0375 {
+    order: 5;
+}
+.dancing-robot0356 {
+    order: 6;
+}
+.dancing-robot0321 {
+    order: 7;
+}
+.dancing-robot0512 {
+    order: 8;
+}
+.dancing-robot0024 {
+    order: 9;
+}
+
+.artist-explore__btn-mobile {
+    display: none;
+}
+
+@media (max-width: 1074px) {
+    .tablet-not {
+        display: none;
+    }
+    .bear {
+        order: 1;
+    }
+    .dog {
+        order: 2;
+    }
+    .cat {
+        order: 3;
+    }
+    .foxy {
+        order: 4;
+    }
+    .artist-explore__title {
+        font-size: 28px;
+    }
+    .artist-explore {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-not {
+        display: none;
+    }
+    .artists__content {
+        gap: 30px;
+    }
+    .artist-collection {
+        gap: 30px;
+    }
+    .artist-collection__content-photo {
+        width: 315px;
+    }
+    .artist-collection__content {
+        width: 315px;
+    }
+    .bid {
+        gap: 87px;
+    }
+    .artist-explore__btn {
+        display: none;
+    }
+    .artist-explore__btn-mobile {
+        display: flex;
+        width: 315px;
+    }
+} 

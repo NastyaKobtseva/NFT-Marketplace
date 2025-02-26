@@ -1,0 +1,182 @@
+.collection {
+    padding: 80px 0;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+.checkout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    &__title {
+        color:#FFF;
+        font-family: "Work Sans";
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+    &__paragraf {
+        color:#FFF;
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+}
+.trending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.animals {
+    &__group {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding: 15px 0;
+    }
+    &__group-etc, &__group-etc-mushrooms {
+        color: #FFF;
+        font-family: "Space Mono";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        text-transform: capitalize;
+        padding: 32px 15px;
+        border-radius: 20px;
+        background: #A259FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        transition: transform .3s linear;
+        &:hover {
+            transform: scale(0.98) translateY(-5px);
+        }
+    }
+    &__title {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+    }
+    &__one {
+        width: 330px;
+        height: 330px;
+        transition: transform .3s linear;
+        &:hover {
+            transform: scale(0.98) translateY(-5px);
+        }
+    }
+    &__group-two {
+        width: 100px;
+        height: 100px;
+        transition: transform .3s linear;
+        &:hover {
+            transform: scale(0.98) translateY(-5px);
+        }
+    }
+}
+.fox {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 0 0 0;
+    &__text {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+}
+.mushrooms {
+    &__group-etc {
+        color: #FFF;
+        font-family: "Space Mono";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        text-transform: capitalize;
+        padding: 32px 15px;
+        border-radius: 20px;
+        background: #A259FF;
+        width: 100px;
+        display: none;
+        transition: transform .3s linear;
+        &:hover {
+            transform: scale(0.98) translateY(-5px);
+        }
+    }
+}
+@media (max-width: 1074px) {
+    .collection {
+        padding: 40px 0;
+    }
+    .collection__content {
+        gap: 40px;
+    }
+    .checkout__title{
+        line-height: 140%;
+        font-size: 28px;
+    }
+    .checkout__paragraf {
+        line-height: 140%;
+        font-size: 16px;
+    }
+    .machines {
+        display: none;
+    }
+    .mushrooms__group-etc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .animals__group-etc-mushrooms {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .collection__content {
+        align-items: start;
+    }
+    .mushrooms{
+        display: none;
+    }
+    .animals__one {
+        width: 315px;
+        height: 315px;
+    }
+    .animals__group-two {
+        width: 95px;
+        height: 95px;
+    }
+    .animals__group-etc {
+        width: 95px;
+    }
+}
+
+@media (max-width: 375px) {
+    .collection__content {
+        align-items: center;
+    }
+}

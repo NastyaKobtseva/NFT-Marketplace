@@ -1,0 +1,285 @@
+.galaxy {
+  padding: 80px 0;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    &-btn {
+      display: none;
+    }
+  }
+}
+.explore {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  &__main {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    &-title {
+      color: #fff;
+      font-family: "Work Sans";
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      text-transform: capitalize;
+    }
+    &-paragraf {
+      color: #fff;
+      font-family: "Work Sans";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      text-transform: capitalize;
+    }
+  }
+  &__btn {
+    color: #fff;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: 2px solid #a259ff;
+    height: 60px;
+    width: 211px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s linear, bg-color 0.3s linear;
+    & svg {
+      fill: #a259ff;
+      transition: fill 0.3s linear, transform 0.3s linear;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #a259ff;
+      z-index: -1;
+      transform: translateX(-100%);
+      transition: transform 0.3s linear;
+    }
+    &:hover::before {
+      transform: translateX(0);
+    }
+    &:hover {
+      transform: scale(0.97);
+      border: none;
+      & svg {
+        transform: rotate(360deg) scale(1.4);
+        fill: white;
+      }
+    }
+  }
+}
+.distant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  &__content {
+    border-radius: 20px;
+    background: #3b3b3b;
+    width: 330px;
+    transition: transform 0.3s linear;
+    &:hover {
+      transform: scale(0.98) translateY(-5px);
+    }
+    &-image {
+      width: 330px;
+      height: 296px;
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+}
+.moondancer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 25px 30px;
+  &__title {
+    color: #fff;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+}
+.life {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0 27px 0;
+  &__svg {
+    width: 24px;
+    height: 24px;
+  }
+  &__text {
+    color: #fff;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+.edena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  &__subtitle {
+    color: #858584;
+    font-family: "Space Mono";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+  }
+  &__text {
+    color: #fff;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+.highest {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 8px;
+}
+
+@media (max-width: 1074px) {
+  .galaxy {
+    padding: 40px 0;
+    &__content {
+      gap: 40px;
+    }
+  }
+  .astrofiction {
+    display: none;
+  }
+  .explore {
+    &__main {
+      &-title {
+        font-size: 28px;
+        line-height: 140%;
+      }
+      &-paragraf {
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .galaxy {
+    &__content {
+      align-items: center;
+      &-btn {
+        border-radius: 20px;
+        border: 2px solid #a259ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        gap: 12px;
+        background-color: transparent;
+        height: 60px;
+        width: 315px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: transform 0.3s linear, bg-color 0.3s linear;
+        & svg {
+          fill: #a259ff;
+          transition: fill 0.3s linear, transform 0.3s linear;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #a259ff;
+          z-index: -1;
+          transform: translateX(-100%);
+          transition: transform 0.3s linear;
+        }
+        &:hover::before {
+          transform: translateX(0);
+        }
+        &:hover {
+          transform: scale(0.97);
+          border: none;
+          & svg {
+            transform: rotate(360deg) scale(1.4);
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+  .explore {
+    &__btn {
+      display: none;
+    }
+  }
+  .distant {
+    flex-wrap: wrap;
+    gap: 20px;
+    &__content {
+      width: 315px;
+      &-image {
+        width: 315px;
+        height: 238px;
+      }
+    }
+  }
+  .price {
+    &__text {
+      font-size: 12px;
+    }
+  }
+  .edena {
+    gap: 115px;
+  }
+  .astrofiction {
+    display: block;
+  }
+}

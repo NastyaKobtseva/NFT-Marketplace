@@ -1,0 +1,386 @@
+.bg-before-orbitians {
+    background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 560px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .bg-before-orbitians {
+        background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg2x.png");
+    }
+}
+.the-orbitians {
+    padding: 40px 0 40px 0;
+}
+.the-orbitians__content {
+}
+.orbitians {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 150px;
+}
+.orbitians__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.minted {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.minted__title {
+    color: #FFF;
+
+    /* H2 - Work Sans */
+    font-family: "Work Sans";
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 56.1px */
+    text-transform: capitalize;
+}
+.minted__date {
+    color: #858584;
+
+    /* Body Text- Work Sans */
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+    text-transform: capitalize;
+}
+.created {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.created__title {
+    color: #858584;
+
+    /* H5 - Space Mono */
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 35.2px */
+    text-transform: capitalize;
+}
+.orbitian, .orbitian-mobile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.orbititan__photo {
+    width: 24px;
+    height: 24px;
+}
+.orbitian__text {
+    color: #FFF;
+
+    /* H5 - Work Sans */
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 30.8px */
+    text-transform: capitalize;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.description__title {
+    color: #858584;
+
+    /* H5 - Space Mono */
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 35.2px */
+    text-transform: capitalize;
+}
+.description__info-text {
+    width: 605px;
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+}
+.description__info-paragraph-second {
+    padding: 55px 0 51px 0;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.details__title {
+    color: #858584;
+
+    /* H5 - Space Mono */
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 35.2px */
+    text-transform: capitalize;
+}
+.details__view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.details__view-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform .3s linear;
+    &:hover {
+        transform: scale(1.02);
+        & svg {
+            fill: #A259FF;
+            transform: rotate(-360deg) scale(1.03);
+        }
+        & .details__view-text {
+            color: #A259FF;
+        }
+    }
+    & svg {
+        fill: #858584;
+        transition: fill .3s linear, transform .3s linear;
+    }
+}
+.details__view-text {
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+    transition: color .3s linear;
+}
+.tags {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+.tags__title {
+    color: #858584;
+
+    /* H5 - Work Sans */
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 30.8px */
+    text-transform: capitalize;
+}
+.tags__exposition {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.tags__exposition-text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    text-transform: uppercase;
+    height: 46px;
+    border-radius: 20px;
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3s linear, bg-color .3s linear;
+    &:hover {
+        transform: scale(1.05) translateY(-5px);
+        background-color: #A259FF;
+    }
+}
+.tags__exposition-animation {
+    width: 150px;
+}
+.tags__exposition-illustration {
+    width: 175px;
+}
+.tags__exposition-moon {
+    width: 110px;
+}
+.auction {
+    display: flex;
+    width: 295px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 20px;
+    background-color: #3B3B3B;
+}
+.auction__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.auction__subtitle {
+    color:  #FFF;
+
+    /* Caption - Space Mono */
+    font-family: "Space Mono";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+}
+.timer, .timer-mobile {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.timer__info {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: start;
+}
+.timer__info-text {
+    color:  #FFF;
+
+    /* H3 - Space Mono */
+    font-family: "Space Mono";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+}
+.time {
+    color:  #FFF;
+
+    /* Caption - Space Mono */
+    font-family: "Space Mono";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+}
+.timer__point {
+    color: #FFF;
+
+    /* H4 - Space Mono */
+    font-family: "Space Mono";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+}
+.auction__btn {
+    color: #FFF;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    width: 235px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #A259FF;
+    border: none;
+    transition: transform .3s linear, border .3s linear, color .3s linear, bg-color .3s linear;
+    &:hover {
+        border: 3px solid #A259FF;
+        background-color: transparent;
+        transform: scale(1.05) translateY(-5px);
+    }
+}
+
+.mobile-version, .orbitian-mobile {
+    display: none;
+}
+
+@media (max-width: 1074px) {
+    .bg-before-orbitians {
+        background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg-tablet.png");
+        height: 420px;
+    }
+    @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .bg-before-orbitians {
+            background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg-tablet2x.png");
+        }
+    }
+    .minted__title {
+        font-size: 38px;
+    }
+    .minted__date, .created__title, .orbitian__text, 
+    .description__title, .description__info-text, .details__title, .details__view-text, .tags__title  {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .description__info-text {
+        width: 365px;
+    }
+    .description__info-paragraph-second {
+        padding: 33px 0 33px 0;
+    }
+    .orbitians {
+        gap: 30px;
+    }
+    .tags__exposition {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-before-orbitians {
+        background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg-mobile.png");
+        height: 420px;
+    }
+    @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .bg-before-orbitians {
+            background-image: url("/src-orbitians/image/raster/the-orbitians/orbitians-bg-mobile2x.png");
+        }
+    }
+    .desktop-version {
+        display: none;
+    }
+    .orbitian {
+        display: none;
+    }
+    .mobile-version, .orbitian-mobile {
+        display: flex;
+    }
+    .minted__title {
+        font-size: 28px;
+    }
+    .orbitians__content{
+        gap: 20px;
+    }
+    .description__info-paragraph-second{
+        padding: 31px 0 31px 0;
+    }
+    .auction {
+        width: 315px;
+        align-items: center;
+    }
+    .description__info-text {
+        width: 315px;
+    }
+}

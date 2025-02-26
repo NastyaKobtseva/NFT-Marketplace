@@ -1,0 +1,154 @@
+.connect {
+    &__content {
+        gap: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.connect__content-photo {
+    width: 610px;
+    height: 642px;
+}
+.connect__content-photo-tablet {
+    display: none;
+}
+.connect__content-photo-mobile {
+    display: none;
+}
+.info-wallet {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: start;
+}
+.wallet {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+}
+.wallet__title {
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+}
+.wallet__paragraf {
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    width: 460px;
+}
+.info-wallet__card {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.info-wallet__metamask {
+    display: flex;
+    height: 72px;
+    padding: 0px 20px 0px 40px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 1px solid #A259FF;
+    background: #3B3B3B;
+    transition: border .3s linear, transform .3s linear;
+    &:hover {
+        border: 1px solid #F6851B;
+        transform: scale(0.98);
+    }
+}
+.info-wallet__wallet {
+    &:hover {
+        border: 1px solid #5D9DF6;
+    }
+}
+.info-wallet__coinbase {
+    &:hover {
+        border: 1px solid #0052FF;
+    }
+}
+.info-wallet__metamask-img {
+    width: 40px;
+    height: 40px;
+}
+.info-wallet__metamask-text {
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+@media (max-width: 1074px) {
+    .connect {
+        &__content {
+            gap: 40px;
+        }
+    }
+    .connect__content-photo {
+        display: none;
+    }
+    .connect__content-photo-tablet {
+        display: block;
+        width: 397px;
+        height: 530px;
+    }
+    .wallet__title {
+        font-size: 38px;
+        line-height: 120%;
+    }
+    .wallet__paragraf {
+        font-size: 16px;
+        line-height: 140%;
+        width: 325px;
+    }
+    .info-wallet__metamask {
+        height: 60px;
+    }
+    .info-wallet__metamask-img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .connect {
+        &__content {
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+    }
+    .connect__content-photo-tablet {
+        display: none;
+    }
+    .connect__content-photo-mobile {
+        display: block;
+        // width: 375px;
+        width: 100%;
+        height: 232px;
+    }
+    .wallet__paragraf {
+        width: 315px;
+    }
+    .info-wallet {
+        gap: 30px;
+        padding: 0 0 40px 0;
+    }
+}
+
+@media (max-width: 375px) {
+    
+}
