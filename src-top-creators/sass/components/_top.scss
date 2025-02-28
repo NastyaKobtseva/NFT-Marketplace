@@ -107,7 +107,7 @@
     border-radius: 20px;
     background: #3B3B3B;
     display: flex;
-    gap: 86px;
+    gap: 60px;
     align-items: center;
     height: 84px;
     width: 1050px;
@@ -184,7 +184,7 @@
     display: flex;
     padding: 12px 0px;
     align-items: center;
-    gap: 381px;
+    gap: 394px;
     justify-content: center;
     border-radius: 20px;
     border: 1px solid #3B3B3B;
@@ -211,16 +211,16 @@
     // gap: 122px;
 }
 .change__person-item1 {
-    padding: 0 121px 0 0;
+    padding: 0 103px 0 0;
 }
 .change__person-item2 {
-    padding: 0 92px 0 0;
+    padding: 0 60px 0 0;
 }
 .nav__content-mobile {
     display: none;
 }
 
-@media (max-width: 1074px) {
+@media (max-width: 1024px) {
     .check__title  {
         font-size: 38px;
     }
@@ -325,9 +325,9 @@
         font-size: 12px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 356px) {
     .change {
-        gap: 106px;
+        gap: 140px;
     }
     .artists__content-name {
         width: 98px;
@@ -337,5 +337,8 @@
     }
     .nav-tabs .nav-item.show .nav-link::after, .nav-tabs .nav-link.active::after {
         width: 63px;
+    }
+    .check {
+        padding: 30px 0;
     }
 }

@@ -92,7 +92,7 @@
     text-transform: capitalize;
 }
 
-@media (max-width: 1074px) {
+@media (max-width: 1024px) {
     .connect {
         &__content {
             gap: 40px;
@@ -147,8 +147,4 @@
         gap: 30px;
         padding: 0 0 40px 0;
     }
-}
-
-@media (max-width: 375px) {
-    
 }

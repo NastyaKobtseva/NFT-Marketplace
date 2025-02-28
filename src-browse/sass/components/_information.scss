@@ -241,7 +241,7 @@
 .dog2 {
     order: 12;
 }
-@media (max-width: 1074px) {
+@media (max-width: 1024px) {
     .tablet-not {
         display: none;
     }
@@ -287,7 +287,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 356px) {
     .nav__content {
         gap: 39px;
     }

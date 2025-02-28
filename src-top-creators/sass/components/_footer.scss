@@ -223,7 +223,7 @@
         display: none;
     }
 }
-@media (max-width: 1074px) {
+@media (max-width: 1024px){
     .footer-marketplace {
         gap: 49px;
     }
@@ -240,9 +240,6 @@
     .exclusive__content-text {
         width: 461px;
     }
-    // .footer-marketplace__line {
-    //     width: 690px;
-    // }
 }
 
 @media (max-width: 768px) {
@@ -318,7 +315,7 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 356px) {
     .anima__info, .exclusive__content-text, 
     .promotions-info-mobile__box, 
     .promotions-info-mobile__btn {
