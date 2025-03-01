@@ -490,7 +490,7 @@ a {
     width: 85px;
   }
   .change {
-    gap: 202px;
+    gap: 172px;
   }
   .artists__content-volume {
     font-size: 12px;
@@ -500,7 +500,7 @@ a {
   }
   .artists__content-name {
     font-size: 14px;
-    width: 155px;
+    width: 127px;
   }
   .check__title {
     font-size: 28px;
@@ -510,7 +510,6 @@ a {
     gap: 10px;
   }
   .artists__content {
-    gap: 28px;
     gap: 50px;
   }
   .change__person-num {
