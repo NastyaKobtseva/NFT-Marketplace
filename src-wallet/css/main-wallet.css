@@ -25,6 +25,12 @@ a {
 
 .header {
   padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2B2B2B;
+  z-index: 1000;
 }
 .header__content {
   display: flex;
@@ -186,6 +192,9 @@ a {
     padding: 15px 0;
   }
 }
+.connect {
+  padding: 100px 0 0 0;
+}
 .connect__content {
   gap: 60px;
   display: flex;
@@ -288,6 +297,9 @@ a {
 }
 
 @media (max-width: 1024px) {
+  .connect {
+    padding: 64px 0 0 0;
+  }
   .connect__content {
     gap: 40px;
   }

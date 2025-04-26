@@ -1,5 +1,5 @@
 .digital {
-    padding: 80px 0;
+    padding: 180px 0 80px 0;
     &__content {
         display: flex;
         align-items: center;
@@ -166,9 +166,11 @@
 
 @media (max-width: 1024px) {
     .digital {
+        padding: 140px 0 80px 0;
         &__content {
             gap: 40px;
             flex-wrap: wrap;
+            align-items: start;
         }
     }
     .discover {
@@ -209,7 +211,7 @@
 
 @media (max-width: 768px) {
     .digital {
-        padding: 40px 0;
+        padding: 104px 0;
         &__content {
             gap: 40px;
         }

@@ -25,6 +25,12 @@ a {
 
 .header {
   padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2B2B2B;
+  z-index: 1000;
 }
 .header__content {
   display: flex;
@@ -187,6 +193,7 @@ a {
   }
 }
 .section-purple-bg {
+  margin: 100px 0 0 0;
   padding: 80px 0 0 0;
   background-image: url("../image/raster/bg-color.png");
   background-repeat: no-repeat;
@@ -395,6 +402,7 @@ a {
   .section-purple-bg {
     background-image: url("../image/raster/bg-color-tablet.png");
     height: 280px;
+    margin: 67px 0 0 0;
   }
 }
 @media (max-width: 1024px) and (min-device-pixel-ratio: 2), (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1024px) and (min-resolution: 192dpi), (max-width: 1024px) and (min-resolution: 2dppx) {

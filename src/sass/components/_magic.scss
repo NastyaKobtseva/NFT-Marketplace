@@ -177,7 +177,7 @@
     .magic {
         padding: 120px 0 40px 0;
         &__content {
-            justify-content: start;
+            // justify-content: start;
             flex-wrap: wrap;
             gap: 30px;
             &-btn {
@@ -241,5 +241,10 @@
                 display: none;
             }
         }
+    }
+}
+@media (max-width: 356px) {
+    .magic__content-btn {
+        width: 295px;
     }
 }

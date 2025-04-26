@@ -1,4 +1,5 @@
 .connect {
+    padding: 100px 0 0 0;
     &__content {
         gap: 60px;
         display: flex;
@@ -94,6 +95,7 @@
 
 @media (max-width: 1024px) {
     .connect {
+        padding: 64px 0 0 0;
         &__content {
             gap: 40px;
         }

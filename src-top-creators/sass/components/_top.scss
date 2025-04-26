@@ -1,4 +1,7 @@
 
+.top {
+    padding: 100px 0 0 0;
+}
 .check {
     padding: 80px 0 80px 0;
     display: flex;
@@ -86,14 +89,6 @@
 .nav-tabs .nav-link {
     border: none;
 }
-
-
-
-
-
-
-
-
 
 .artists {
     padding: 40px 0 40px 0;
@@ -221,6 +216,9 @@
 }
 
 @media (max-width: 1024px) {
+    .top {
+        padding: 64px 0 0 0;
+    }
     .check__title  {
         font-size: 38px;
     }

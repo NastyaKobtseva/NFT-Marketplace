@@ -1,4 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2B2B2B; 
+  z-index: 1000;
   padding: 20px 50px;
   &__content {
     display: flex;
